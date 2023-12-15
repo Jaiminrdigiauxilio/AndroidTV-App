@@ -58,44 +58,9 @@ public class FirstFragment extends Fragment {
 //        Glide.with(this).load(url).into(binding.imageView);
         binding.imageView.setImageResource(R.drawable.img_1);
 
-//        executorService = Executors.newSingleThreadExecutor();
-//        FutureTask<Bitmap>  futureTask = new FutureTask<>(()->downloadImg(url));
-//        executorService.submit(futureTask);
-//
-//        try {
-//            Bitmap taskResult = futureTask.get();
-//            if(taskResult != null) {
-//                img.setImageBitmap(taskResult);
-//
-//            } else {
-//                System.out.println("err");
-////                Snackbar.make(view, "errrorrrrr", Snackbar.LENGTH_SHORT).show();
-////                img.setImageResource(androidx.transition.R.drawable.abc_text_select_handle_left_mtrl_dark);
-//
-//            }
-//        } catch (Exception e) {
-//            e.printStackTrace();
-////            Toast.makeText(getContext(), "error: "+e.getStackTrace(), Toast.LENGTH_SHORT).show();
-//        } finally {
-//            executorService.shutdown();
-//        }
     }
 
 
-//    private Bitmap downloadImg(String imgUrl) {
-//        try {
-//            URL url = new URL(imgUrl);
-//            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
-//            connection.setDoInput(true);
-//            InputStream input = connection.getInputStream();
-//            return BitmapFactory.decodeStream(input);
-//
-//        } catch (Exception e) {
-//            e.printStackTrace();
-////            Toast.makeText(getContext(), "error in downloading: "+e.getStackTrace(), Toast.LENGTH_SHORT).show();
-//            return null;
-//        }
-//    }
 
     @Override
     public void onDestroyView() {
